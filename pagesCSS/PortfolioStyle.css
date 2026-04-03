@@ -4,32 +4,29 @@
     box-sizing: border-box;
 }
 
-.navbar-toggler{
-    border: none;
-    font-size: 1.25rem;
-}
 
-.portfDiv1{
-    height: 50vh;
-    /*Lowkey this diddn't look bad when I put a colour instead of image*/
-    background: url("../images/wtcManhattanpic.jpeg");
+.hero-section{
+    background: #F0E2C4;
     background-size: cover;
-    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 140px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .overlay-text{
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);*/    
     font-family: 'calibri';
 }
 
 .big{
     font-size: 50px;
     font-weight: bold;
+    color:rgb(109, 73, 171);
 }
 
 .small{
@@ -37,27 +34,27 @@
     font-size: 25px;
     font-weight: 500;
     text-align: center;
+    color:black;
 }
 
+
+
 .abtDiv{
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10vh;
-    background-color: white;
 }
 
 .littleDivs{
-    border: whitesmoke;
+    border: 1px solid #CFC4E6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-width: 1px;
-    border-style: solid;
     border-radius: 10px;
     height: 7vw;
     width: 15vw;
-    background-color: rgba(249, 219, 205, 0.493);
+    background-color: #F6F2FC;
 }
 
 .titlee{
@@ -83,24 +80,22 @@
 }
 
 .divTitles{
-    text-align: center;
-    width: 25vw;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: bold;
     color: rgb(207, 191, 234);
-    margin-bottom: 20px;
+    margin-left: 1vw;
 }
 
-.educationText{
-    display: flex;
-    flex-direction: column;
-    width: 45vw;
-    font-size: 20px;
-    font-weight: bold;
+.divHeadings{
+    padding: 7px;
+    width: 80vw;
+    background-color: #6D49AB;
+    clip-path: polygon(0% 0%, 100% 0%, 96% 50%, 100% 100%, 0% 100%, 4% 50%);
 }
 
-.educationText p{
-    margin-bottom: 10px;
+/*Didn't want to disrupt the education card, spent so much time getting it to work*/
+.divHeads{
+    margin-top: 30px;
 }
 
 .skillsDiv{
@@ -160,7 +155,7 @@
 
 
 
-/*WORK EXPERIENCE*/
+/*LEADERSHIP EXPERIENCE*/
 
 .leadershipDiv{
     display: flex;
@@ -169,11 +164,62 @@
     justify-content: center;
 }
 
-.positionn{
+.eItem{
     background-color: #F0E2C4;
     border: 0.1px;
     border-style: solid;
     border-color: #D4A96A;
-    width: 70vw;
-    height: 30vh;
+    width: 90vw;
+    height: 40vh;
+}
+
+.badge{
+    margin: 5px;
+    padding: 10px;
+    cursor: none;
+}
+
+.date{
+    font-size: 17px;
+    color: rosybrown;
+    font-style: italic;
+    font-family: font-hand;
+}
+
+.eTitle{
+    font-size: 25px;
+    font-weight: bold;
+    color: #6D49AB;
+    font-family: 'Courier New', monospace;
+}
+
+.eDescription{
+    font-size: 18px;
+    color: rgb(27, 25, 25);
+    font-family: 'calibri';
+}
+
+
+/*-----------EDUCATION CARD BEGINS--------------*/
+
+.education-card{
+    margin-top: clamp(72px, 8vw, 160px);
+    position: relative;
+    overflow: visible;
+    padding-top: 70px;
+}
+
+.education-card .divHeadings{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(80vw, 820px);
+    z-index: 2;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
+}
+
+.education-card .divHeadings .eTitle{
+    color: #ffffff;
+    margin: 0;
 }

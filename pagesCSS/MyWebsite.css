@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-/*-----------NAVBAR--------------*/
+/*-----------NAVBAR STARTS--------------*/
 
 .navbar{
     background-color: whitesmoke;
@@ -23,40 +23,17 @@
     padding: 0.5rem;
 }
 
-/*.navbar{
-    margin-top: 20px;
-    margin-left: 20px;
-    display: flex;
-    height: 150px;
-    font-family: calibri;
-}*/
-
-/*.navlinks{
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0 auto;
-    gap: 20px;
-}*/
-
 .navbar-brand{
+    margin-left: 10px;
     font-family: 'calibri';
     text-decoration: none;
     font-size: 30px;
     font-weight: 550;
-    color: rgb(202, 177, 244);
+    color: rgb(109, 73, 171);
     transition: 0.3s color;
     cursor: pointer;
 }
 
-/*.logo{
-    color: rgb(202, 177, 244);
-    cursor: pointer;
-}*/
-
-/*I changed this*/
 .nav-link{
     text-decoration: none;
     color: rgb(202, 177, 244);
@@ -67,27 +44,6 @@
     position: relative;
 }
 
-/*
-.navPageLink a, .navPageLink a:link, .navPageLink a:visited,
-.navPageLink a:active{
-    text-decoration: none;
-    color: rgb(202, 177, 244);
-    font-size: 20px;
-    font-weight: bold;
-    align-items: center;
-    cursor: pointer;
-}
-*/
-
-/*.navPageLink{
-    Haven't edited anything here ...
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}*/
-
-
-/*I changed this too*/
 .nav-link:hover, .nav-link:active{
     color: rgb(109, 73, 171);
     font-size: 20px;
@@ -115,25 +71,20 @@
     }
 }
 
-/*
-.navPageLink a:hover{
-    color: rgb(109, 73, 171);
-    font-size: 20px;
-    font-weight: bold;
-    align-items: center;
-    cursor: pointer;
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
 }
-*/
 
 /*-----------NAVBAR ENDS--------------*/
 
 
-.hero-section{
+/*.hero-section{
     background: url(../images/aiPic.jpeg) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
-}
+}*/
 
 /*
 .hero-section::before{
