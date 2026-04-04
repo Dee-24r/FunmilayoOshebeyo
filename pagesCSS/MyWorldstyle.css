@@ -4,7 +4,36 @@
     box-sizing: border-box;
 }
 
-.portfDiv1{
-    background-image : "../images/cityPic.jfif";
-    
+.introTextClass{
+    width: 50vw;
+    font-size: 24px;
+    /*I want a fun font, copilot*/
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.welcome{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ca94ef;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 
+.personaCard{
+    width: 12vw;
+    height: 40vh;
+}
+
+.personaImg{
+    height: 20vh;
+    object-fit: cover;
+}
+
+*/
+.persona-carousel{
+    --gap: 40px;
 }

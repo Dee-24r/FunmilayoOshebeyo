@@ -35,3 +35,18 @@ GitHub, LinkedIn, Email, any other
 Purple means commited, but not synced.
 Stage/add
 commitedPus/sync
+
+
+/*@media (max-width: 900px){
+    .projects-carousel{
+        --visible-items: 2;
+    }
+}
+
+@media (max-width: 640px){
+    .projects-carousel{
+        --visible-items: 1;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}*/

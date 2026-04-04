@@ -1,21 +1,42 @@
 // Typewriter thing
-const text =  "Tech Girl ● Jovial nature ● Love learning";
-let i = 0;
-const typeTarget = document.getElementById("type");
+function typeWriter(target, text, speed = 50, onComplete = null){
+    let i = 0;
+    function type(){
+        if (i < text.length){
+            target.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else if (typeof onComplete === "function"){
+            onComplete();
+        }
+    }
 
-function typeWriter(){
-    if (i < text.length){
-        typeTarget.textContent += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 50); // speed
+    if (target){
+        type();
     }
 }
 
-if (typeTarget){
-    typeWriter();
-}
+const portfText = "Tech Girl ● Jovial nature ● Love learning";
+
+const introText = "Hi, I'm Funmilayo! I love technology, afrobeats, and apple juice.";
+const welcome = "Welcome to my world!";
+const remainingText = "I'm a CS girl; Christian, and Nigerian. I love dancing, hacking, learning, and making!";
+
+const introTarget = document.getElementById("introTextId");
+const welcomeTarget = document.getElementById("welcome");
+const remainingTarget = document.getElementById("remainingText");
+
+const portfTarget = document.getElementById("portfText");
+
+typeWriter(introTarget, introText, 50, () => {
+    typeWriter(welcomeTarget, welcome, 100) ;
+});
+
+typeWriter(portfTarget, portfText, 50);
 
 
+// Carousels
+// The JS for the carousel was done with the help of AI but I made some adjustments and I did the styling and html myself.
 const projectsCarousel = document.getElementById("projectsCarousel");
 
 if (projectsCarousel){
@@ -90,6 +111,8 @@ if (projectsCarousel){
     window.addEventListener("resize", setupCarousel);
     setupCarousel();
 }
+
+
 
 
 /*var msg = "Hello World!";

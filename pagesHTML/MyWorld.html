@@ -1,117 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My World</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../pagesCSS/MyWebsite.css">
-    <link rel="stylesheet" href="../pagesCSS/MyWorldstyle.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My World</title>
 
-<body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="../pagesCSS/MyWebsite.css">
+        <link rel="stylesheet" href="../pagesCSS/MyWorldstyle.css">
+    </head>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
+    <body>
 
-                <a class="navbar-brand" href="#">Funmilayo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Funmilayo</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <a class="navbar-brand" href="#">Funmilayo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Funmilayo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" href="MyWebsite.html">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" aria-current="page" href="Portfolio.html">Portfolio</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" href="MyWorld.html">My World</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link mx-lg-2" href="Contact.html">Contact and Links</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
                     </div>
-
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="MyWebsite.html">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" aria-current="page" href="Portfolio.html">Portfolio</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="MyWorld.html">My World</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="Contact.html">Contact and Links</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
                 </div>
+            </nav>
+
+        <!-- Coming back to do the multiple styling thing-->
+        <div class="hero-section" style=" background: linear-gradient(135deg, #000000 0%, #121212 50%, #1c1c1c 100%);">
+            <div style="margin-top: 10vh; height: 45vh;">
+                <p id="introTextId" class="introTextClass"></p>
+                <p id="welcome" class="welcome"></p>
+                <!-- <p id="remainingText" class="introTextClass"></p> -->
             </div>
-        </nav>
 
-    <h1>Welcome to My World</h1>
-    <p>Hi! I'm Funmilayo. I love technology, afrobeats, and apple juice.</p>
-    
-    <div class="aboutMe">
-        <h1>Welcome to My World!</h1>
-    <h2>Hi, I'm Funmilayo. I love robotics, afrobeats, and apple juice.</h2>
-    </div>
+            <div style="margin-top: 60px;">
+                <h1 class="someText" style="color: white;">A bit about myself :D</h1>
+                
+                <section id="projectsCarousel" class="projects-carousel persona-carousel" data-bs-ride="carousel" aria-label="Project carousel">
+                    <button id="projectsPrev" class="leftandrightbuttons" style="background: none;" type="button" aria-label="Previous project">&#10094;</button>
 
-    <div class="carousel">
-        <h3>My January ScrapBook</h3>
-        <h5>Things I did last month (Updated: January 2026)</h5>
-    </div>
-    <!--Comment-->
-    <div class="carousel">
-        <div class="carousel-item" id="1">
-            <h3>NYC World Trade Centre</h3>
-            <img src="../images/wtcManhattanpic.jpeg" alt="World Trade Centre">
-            <p>Visited the World Trade Centre in NYC</p>
-        </div>
+                    <div class="projects-viewport persona-viewport">
+                        <div class="projects-track">
 
-        <div class="carousel-item" id="2">
-            <h3>Club representative</h3>
-            <img src="../images/city.jfif" alt="Winter Involvement Fair">
-            <p>Represented the Computer Science clubs at the Winter Involvement Fair</p>
-        </div>
+                                <div class="card project-card personaCard">
+                                    <img src="../images/persona/techAesthetic.jfif" class="card-img-top personaImg" alt="tech aesthetic">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tech Girl</h5>
+                                        <p class="card-text">I love hacking!</p>
+                                    </div>
+                                </div>
 
-        <div class="carousel-item" id="3">
-            <h3>Caricature Trend</h3>
-            <img src="../images/aicaricature.jpeg" alt="AI Caricature">
-            <p>Created a caricature of myself and hobbies using AI</p>
-        </div>
+                                <div class="card project-card personaCard">
+                                    <img src="../images/persona/christianAesthetic.jfif" class="card-img-top personaImg" alt="Christian">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Christian</h5>
+                                        <p class="card-text">All about Jesus!</p>
+                                    </div>
+                                </div>
+
+                                <div class="card project-card personaCard">
+                                    <img src="../images/persona/nigerianFlag.png" class="card-img-top personaImg" alt="Nigerian">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nigerian</h5>
+                                        <p class="card-text">..and I love to dance!</p>
+                                    </div>
+                            </div>
+
+                            <div class="card project-card personaCard">
+                                <img src="../images/persona/happyPic.jpg" class="card-img-top personaImg" alt="happy pic">
+                                <div class="card-body personaBody">
+                                    <h5 class="card-title">Extraverted</h5>
+                                    <p class="card-text">Yuh!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="projectsNext" class="leftandrightbuttons" style="background: none;" type="button" aria-label="Next project">&#10095;</button>
+                </section>
+            </div>
             
-        <div class="carousel-item" id="4">
-            <h3>Gen-AI Music</h3>
-            <img src="../images/aiPic.jpeg" alt="Music AI">
-            <p>Explored AI-generated music creation tools</p>
         </div>
 
-    </div>
-
-    <div class="friends">
-        <h3>Check out My Friends'</h3>
-
-        <div class="friends-item" id="1">
-            <h5>Fortune</h5>
-            <a href="https://substack.com/@danganafortune?utm_campaign=profile&utm_medium=profile-page">What's the colour of love? by Princess Danagana</a>
-            <p>Substack stories</p>
+        
+        <div class="aboutMe">
+            <h1>Welcome to My World!</h1>
+        <h2>Hi, I'm Funmilayo. I love robotics, afrobeats, and apple juice.</h2>
         </div>
 
-        <div class="friends-item" id="2">
-            <h5>Conqueror</h5>
-            <a href="https://glass-arc.vercel.app/">Backend Architecture App</a>
-            <p>A cool VS Code extension that creates your backend in real time.</p>
+        <div class="carousel">
+            <h3>My January ScrapBook</h3>
+            <h5>Things I did last month (Updated: January 2026)</h5>
+        </div>
+        <!--Comment-->
+        <div class="carousel">
+            <div class="carousel-item" id="1">
+                <h3>NYC World Trade Centre</h3>
+                <img src="../images/wtcManhattanpic.jpeg" alt="World Trade Centre">
+                <p>Visited the World Trade Centre in NYC</p>
+            </div>
+
+            <div class="carousel-item" id="2">
+                <h3>Club representative</h3>
+                <img src="../images/city.jfif" alt="Winter Involvement Fair">
+                <p>Represented the Computer Science clubs at the Winter Involvement Fair</p>
+            </div>
+
+            <div class="carousel-item" id="3">
+                <h3>Caricature Trend</h3>
+                <img src="../images/aicaricature.jpeg" alt="AI Caricature">
+                <p>Created a caricature of myself and hobbies using AI</p>
+            </div>
+                
+            <div class="carousel-item" id="4">
+                <h3>Gen-AI Music</h3>
+                <img src="../images/aiPic.jpeg" alt="Music AI">
+                <p>Explored AI-generated music creation tools</p>
+            </div>
+
         </div>
 
-        <div class="friends-item" id="3">
-            <h5>Nommami</h5>
-            <a href="https://www.instagram.com/rosei_lilac?igsh=amg0MzRydzk5OHhk">Public Health</a>
-            <p>Empowering education for girls</p>
-        </div>
-    </div>
+        <div class="friends">
+            <h3>Check out My Friends'</h3>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+            <div class="friends-item" id="1">
+                <h5>Fortune</h5>
+                <a href="https://substack.com/@danganafortune?utm_campaign=profile&utm_medium=profile-page">What's the colour of love? by Princess Danagana</a>
+                <p>Substack stories</p>
+            </div>
+
+            <div class="friends-item" id="2">
+                <h5>Conqueror</h5>
+                <a href="https://glass-arc.vercel.app/">Backend Architecture App</a>
+                <p>A cool VS Code extension that creates your backend in real time.</p>
+            </div>
+
+            <div class="friends-item" id="3">
+                <h5>Nommami</h5>
+                <a href="https://www.instagram.com/rosei_lilac?igsh=amg0MzRydzk5OHhk">Public Health</a>
+                <p>Empowering education for girls</p>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="../app.js"></script>
+    </body>
 </html>
