@@ -4,29 +4,75 @@
     box-sizing: border-box;
 }
 
-
+/*-----------HERO SECTION BEGINS--------------*/
 .portfolioHero{
     background: linear-gradient(135deg, #F8F3FF 0%, #EDE2FF 45%, #DBCCF5 100%);
+}
+
+.heroPart1{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 12vh;
+    height: auto;
+}
+
+.leftDivi{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightDivi{
+    width: 40%;
+}
+
+.heroImg{
+    margin: 5vh 6vw 5vh 0;
+    width: 80%;
+    height: 80vh;
+    border-radius: 20px;
 }
 
 .overlay-text{
     /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);*/    
     font-family: 'calibri';
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 7vh;
 }
 
 .big{
+    width: 80%;
     font-size: 50px;
     font-weight: bold;
     color:rgb(109, 73, 171);
 }
 
 .small{
-    width: 70%;
-    font-size: 25px;
+    padding-top: 2vh;
+    width: 80%;
+    font-size: 20px;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     color:black;
 }
+
+.buttonn{
+    padding: 3vh;
+    background-color: rgb(109, 73, 171);
+    border-color: #6D49AB;
+    border-radius: 10px;
+}
+
+.leftDivi a{
+    align-self: flex-start;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    text-decoration: none;
+}
+
+/*-----------ABOUT ME SECTION BEGINS--------------*/
 
 .abtDiv{
     height: 30vh;
@@ -43,7 +89,7 @@
     border-radius: 10px;
     height: 7vw;
     width: 17vw;
-    background-color: #F0E2C4;
+    background-color: rgb(109, 73, 171);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,22 +101,23 @@
     text-align: center;
     color: black;
     margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .ans{
+    margin-top: 3px;
     display: block;
     width: 100%;
     text-decoration: none;
     font-size: 16px;
-    color: rgb(27, 25, 25);
+    color: white;
+    font-weight: bold;;
     text-align: center;
 }
 
-.educationDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*-----------HERO SECTION ENDS--------------*/
+
+
 
 .divTitles{
     font-size: 35px;
@@ -87,11 +134,12 @@
 }
 
 /*Didn't want to disrupt the education card, spent so much time getting it to work*/
-
 .divHeads{
     margin-top: 30px;
 }
 
+
+/*-----------SKILL SECTION BEGINS--------------*/
 .skillsDiv{
     display: flex;;
     flex-direction: column;
@@ -128,8 +176,11 @@
 }
 
 .skillListing{
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -146,16 +197,30 @@
     font-size: 30px;
 }
 
+/*-----------SKILL SECTION ENDS--------------*/
 
 
 
-/*LEADERSHIP EXPERIENCE*/
+/*LEADERSHIP EXPERIENCE BEGINS*/
 
 .leadershipDiv{
+    padding-bottom: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/*-----------LEADERSHIP EXPERIENCE ENDS--------------*/
+
+
+/*-----------EDUCATION CARD BEGINS--------------*/
+
+
+.educationDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .eItem{
@@ -199,9 +264,6 @@
     font-family: 'calibri';
 }
 
-
-/*-----------EDUCATION CARD BEGINS--------------*/
-
 .education-card{
     margin-top: clamp(72px, 8vw, 160px);
     overflow: visible;
@@ -217,3 +279,5 @@
     z-index: 2;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
 }
+
+/*-----------EDUCATION CARD ENDS--------------*/
