@@ -1,6 +1,6 @@
 # Hi, I'm Funmilayo
 
-Website live on Github Pages: 
+This website is live on Github Pages: https://dee-24r.github.io/FunmilayoOshebeyo/
 
 This is my personal website that I've made myself. My website contains 4 pages:
 - a home page (The home :D)
@@ -10,4 +10,4 @@ This is my personal website that I've made myself. My website contains 4 pages:
 
 I'll definitely be making more edits in the near future. This site was made using HTML, CSS, Bootstrap, and a bit of Javascript.
 
-View my website [here]()
+View my website [here](https://dee-24r.github.io/FunmilayoOshebeyo/)
