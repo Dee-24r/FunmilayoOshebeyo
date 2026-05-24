@@ -16,7 +16,7 @@ function typeWriter(target, text, speed = 50, onComplete = null){
     }
 }
 
-const portfText = "Tech Girl ● Adventurous spirit ● Always Learning";
+const portfText = "Tech Girl ● Adventurous ● Always Learning";
 
 const introText = "Hi, I'm Funmilayo! I love technology, afrobeats, and apple juice.";
 const welcome = "Welcome to my world!";
